@@ -36,10 +36,16 @@
   >
     
     <!--images-->
-    <a-image src="hancock_nose.png" width="250" height="270"></a-image>
+    <a-image src="hancock_nose.png" width="3" height="1.5"></a-image>
     
     <!--text-->
-    <a-text value="Hello, World!"></a-text>
+    <a-assets>
+    <a-mixin id="text"
+			text="align: center; width: 3;
+      font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt;
+			value: Some text.">
+		</a-mixin>
+    </a-assets>
     
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
