@@ -35,21 +35,11 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
     
-    <!--images
-	505px width, 537 height
-	aspect ratio = w/h = 505/537 = 0.94
-     	assuming 505 px = 1 m
-     	expected width of image in VR = 2.5 m
-     	height of image in VR = 2.5/0.94 = 2.65 -->
--->
-	<a-image src="hancock_nose.png">
-    
-    <!--text-->
-    <!--<a-assets>
-    <a-mixin id="text"
-	     	text="align: center; width: 3; font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt;value: Some text.">
-		</a-mixin>
-    </a-assets>-->
+   <!--images-->
+     <a-image src="hancock_nose.png" width="505" height="537"></a-image>
+
+     <!--text-->
+     <a-text value="Hello, World!"></a-text>
     
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
