@@ -35,8 +35,14 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
     
-    <!--images-->
-    <a-image src="hancock_nose.png" width="100%" height="100%"></a-image>
+    <!--images
+	505px width, 537 height
+	aspect ratio = w/h = 505/537 = 0.94
+     	assuming 505 px = 1 m
+     	expected width of image in VR = 2.5 m
+     	height of image in VR = 2.5/0.94 = 2.65 -->
+-->
+    <a-image src="hancock_nose.png" width="2.5" height="2.65"></a-image>
     
     <!--text-->
     <a-assets>
