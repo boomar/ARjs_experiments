@@ -44,16 +44,23 @@
     >
       
       <!--Text-->
-      <a-mixin id="text"
+      <a-assets>
+        <a-mixin id="text"
             text="align: center; width: 3;
             font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt;
             value: Some text.">
         </a-mixin>
+    </a-assets>
+      
+      <a-entity>
+        <a-text mixin="text" position="0 1 0" wrap-count="15" rotation="-90 0 0" color="blue"></a-text>
+      </a-entity>
+
       
       <!--image-->
       <a-entity>
       <a-image src="hancock_nose.png" position="0 0 -2" width="250" height="270"></a-image>
-      </a-entity
+      </a-entity>
               
       <!--image-->
       <a-entity>
