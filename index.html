@@ -25,7 +25,7 @@
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
-    <div>Loading, please wait...</div>
+    <div>Loading, please wait a bit ...</div>
   </div>
   <a-scene
     vr-mode-ui="enabled: false;"
@@ -42,26 +42,23 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <!--<a-entity
-        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-        scale="5 5 5"
-        position="50 150 0"
-      >
-      </a-entity>-->
       
+      <!--image-->
       <a-entity>
       <a-image src="hancock_nose.png" position="0 0 -2" width="250" height="270"></a-image>
       </a-entity
               
+      <!--image-->
       <a-entity>
       <a-image src="virus.png" position="200 100 -1" width="200" height="200" animation="property: rotation; to: 360 0 0 ; loop: true; dur: 2000" rotation="0 0 0"></a-image>
       </a-entity>
       
-      <a-entity>
-      <a-text value="Hello, World!" scale="2 2 1" position="200 400 0"></a-text>
-      </a-entity>
+      <!--Text-->
+        <a-entity position="-5.5 1.5 2" bmfont-text="color: black; text: Frodo's second fav ring; align: center;" rotation="" scale="2.2 2.2 2.2" visible="">
+	</a-entity>
         
     </a-nft>
     <a-entity camera></a-entity>
+      
   </a-scene>
 </body>
